@@ -1,1 +1,52 @@
-<p>progress works!</p>
+<!-- barra progreso -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar {{ progreso1 }} </h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-success active progress-bar-striped"
+                        style="height:10px;"
+                        [style.width]="getProgreso1"
+                        role="progressbar">
+                        <span class="sr-only">85% Complete (success)</span>
+                    </div>
+                </div>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info active progress-bar-striped"
+                        style="height:10px;"
+                        [style.width]="getProgreso2"
+                        role="progressbar">
+                        <span class="sr-only">85% Complete (success)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <!-- columna 1 con Input y botones incremental (+) y decremental (-) -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (escuchaProgreso)="progreso1 = $event" 
+                                    [valor]="progreso1">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+
+    <!-- columna -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (escuchaProgreso)="progreso2 = $event" 
+                                    [valor]="progreso2"
+                                    [btnClase]="'btn-info'">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+</div>
