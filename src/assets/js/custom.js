@@ -82,22 +82,23 @@ const customInitFunctions = () => {
         }).trigger('blur');
 
         // ============================================================== 
-        // Auto select left navbar
+        // Auto select left navbar - 20210827 EJBO se comento el código porque no funciona bien, destaca el 
+        //                           menu seleccionado despues de refrescar la página y no es lo que se espera
         // ============================================================== 
-        $(function() {
-            var url = window.location;
-            var element = $('ul#sidebarnav a').filter(function() {
-                return this.href == url;
-            }).addClass('active').parent().addClass('active');
-            while (true) {
-                if (element.is('li')) {
-                    element = element.parent().addClass('in').parent().addClass('active');
-                } else {
-                    break;
-                }
-            }
+        // $(function() {
+        //     var url = window.location;
+        //     var element = $('ul#sidebarnav a').filter(function() {
+        //         return this.href == url;
+        //     }).addClass('active').parent().addClass('active');
+        //     while (true) {
+        //         if (element.is('li')) {
+        //             element = element.parent().addClass('in').parent().addClass('active');
+        //         } else {
+        //             break;
+        //         }
+        //     }
 
-        });
+        // });
         // ============================================================== 
         //tooltip
         // ============================================================== 
