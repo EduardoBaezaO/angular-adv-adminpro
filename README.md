@@ -35,4 +35,6 @@ Mensaje que no entontré solución en la web al menos en todo lo que busque.
 
 Hasta que decidi revisar el sigueinte vídeo "https://www.youtube.com/watch?v=keTtL5fFO0Y" el cual dice por titulo "🍀MongoDB🍀02🍀Como instalar Compass🍃 y conectar con Atlas"
 
-En donde enseño a configurar la conexión utilizando la opción "Fill in connection fields individually" en donde coloco el cluster primario, este cluster primario y el resto se pueden obtener en mongodb Atlas
+En donde enseñó a configurar la conexión utilizando la opción "Fill in connection fields individually" en donde coloco el cluster primario, este cluster primario y el resto se pueden obtener en mongodb Atlas.
+
+Seguí los pasos que indicó y presto logré conectarme desde mongodb Compass a mongodb Atlas, esto despues de tres días de investigación, jejeje, plop!!!
